@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: 100000px;
+  height: 1000px;
   background-color: var(--second-color);
   overflow-x: hidden;
 }
@@ -27,7 +27,15 @@ body {
 }
 
 .transition {
-  transition: 0.2s;
+  transition: 0.4s;
+}
+
+.filler-hg {
+  height: 100vh;
+}
+
+nav {
+  z-index: 10;
 }
 
 @media screen and (max-width: 755px) {
@@ -55,10 +63,10 @@ body {
   height: 100vh;
   background: linear-gradient(
     170deg,
-    var(--main-color) 70%,
-    var(--second-color) 0%
+    var(--main-color) 80%,
+    var(--second-color) 70%
   );
   position: absolute;
   top: 0px;
-  z-index: -2;
+  z-index: -10;
 }

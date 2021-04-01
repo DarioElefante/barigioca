@@ -26,7 +26,7 @@ function App() {
             <Contatti />
           </Route>
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </>
     </Router>
   );

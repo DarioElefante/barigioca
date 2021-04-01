@@ -6,7 +6,7 @@ function Nav() {
   const [smartmenu, setSmart] = useState(false);
 
   const navbarOnSCroll = () => {
-    if (window.scrollY >= 80) {
+    if (window.pageYOffset > 200) {
       setNav(true);
     } else {
       setNav(false);
@@ -14,10 +14,10 @@ function Nav() {
   };
 
   useEffect(() => {
-    if (window.innerWidth >= 770) {
-      window.addEventListener("scroll", navbarOnSCroll);
-    } else {
+    if (window.innerWidth <= 770) {
       setNav(true);
+    } else {
+      document.addEventListener("scroll", navbarOnSCroll);
     }
   }, []);
 
