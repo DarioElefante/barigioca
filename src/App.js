@@ -6,12 +6,36 @@ import Contatti from "./components/Views/Contatti";
 import Corsi from "./components/Views/Corsi";
 import Prodotti from "./components/Views/Prodotti";
 import Progetto from "./components/Views/Progetto";
+import { useEffect, useState } from "react";
 
 function App() {
+  const [navbar, setNav] = useState(false);
+  const [smartmenu, setSmart] = useState(false);
+
+  const navbarOnSCroll = () => {
+    if (window.pageYOffset > 200) {
+      setNav(true);
+    } else {
+      setNav(false);
+    }
+  };
+
+  useEffect(() => {
+    if (window.innerWidth <= 770) {
+      setNav(true);
+    } else {
+      document.addEventListener("scroll", navbarOnSCroll);
+    }
+  }, []);
+
+  const displayMenu = () => {
+    setSmart(!smartmenu);
+  };
+
   return (
     <Router>
       <>
-        <Nav />
+        <Nav navbar={navbar} smartmenu={smartmenu} displayMenu={displayMenu} />
         <Switch>
           <Route exact path="/">
             <Progetto />

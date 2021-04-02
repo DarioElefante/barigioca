@@ -31,7 +31,11 @@ body {
 }
 
 .filler-hg {
-  height: 100vh;
+  height: 90vh;
+}
+
+.fix-height {
+  height: 5vh;
 }
 
 nav {
@@ -44,12 +48,14 @@ nav {
     opacity: 0;
     right: -100%;
     top: 110px;
+    display: hidden;
   }
 
   .smartnav.active {
     height: 100vh;
+    display: block;
     position: absolute;
-    opacity: 0.5;
+    opacity: 0.9;
     right: 0%;
     padding-right: 50px;
     padding-top: 20px;
@@ -61,12 +67,34 @@ nav {
 
 .above {
   height: 100vh;
+  background-color: var(--main-color);
+  clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
+}
+
+.scrollDown {
+  color: rgba(245, 245, 245, 0.507);
+}
+.scrollDown:hover {
+  padding-top: 60px;
+}
+
+.carousel {
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 0;
+}
+.carousel::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
   background: linear-gradient(
-    170deg,
-    var(--main-color) 80%,
+    160deg,
+    var(--main-color) 0%,
     var(--second-color) 70%
   );
-  position: absolute;
-  top: 0px;
-  z-index: -10;
+  opacity: 0.5;
+  z-index: 3;
 }
