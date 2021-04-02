@@ -68,7 +68,7 @@ nav {
 .above {
   height: 100vh;
   background-color: var(--main-color);
-  clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
+  clip-path: polygon(0% 0%, 100% 0, 100% 93%, 50% 100%, 0 93%);
 }
 
 .scrollDown {

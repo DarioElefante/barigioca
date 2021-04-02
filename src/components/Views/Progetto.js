@@ -9,7 +9,11 @@ function Progetto() {
         <div className="container-fluid d-flex flex-column justify-content-around above">
           <div className="row">
             <div data-aos="zoom-in-down" className="col-md-6 col-12 pt-5">
-              <img src="" alt="" />
+              <img
+                className="img-fluid mx-auto d-block rounded rounded-pill"
+                src="media/barigioca_logo.jpg"
+                alt=""
+              />
             </div>
             <div data-aos="zoom-in-up" className="col-md-6 col-12">
               <h1 className="mt-5 pt-5">Il progetto</h1>

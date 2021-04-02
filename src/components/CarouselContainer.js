@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CarouselContainer = () => {
   return (
-    <Carousel>
+    <Carousel data-aos="fade-up">
       <Carousel.Item>
         <img
           className="d-block w-100 img-fluid carousel"
