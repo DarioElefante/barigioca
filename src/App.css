@@ -70,6 +70,23 @@ nav {
   background-color: var(--main-color);
   clip-path: polygon(0% 0%, 100% 0, 100% 93%, 50% 100%, 0 93%);
 }
+.half-above {
+  height: 75vh;
+  background-color: var(--main-color);
+  /* clip-path: polygon(0% 0%, 100% 0, 100% 93%, 50% 100%, 0 93%); */
+}
+
+.px-custom {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+@media screen and (max-width: 770px) {
+  .px-custom {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
 
 .scrollDown {
   color: rgba(245, 245, 245, 0.507);
@@ -97,4 +114,18 @@ nav {
   );
   opacity: 0.5;
   z-index: 3;
+}
+
+.separator {
+  border-top: 3px solid #bbb;
+  width: 150px;
+}
+
+.bg-form {
+  background-color: var(--main-color);
+  clip-path: polygon(0 0, 82% 26%, 100% 100%, 0% 100%);
+}
+.bg-contact-social {
+  background-color: var(--main-color);
+  clip-path: polygon(0 0, 100% 0, 94% 72%, 8% 64%);
 }
