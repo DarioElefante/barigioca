@@ -1,28 +1,17 @@
 import HalfHeader from "../HalfHeader.js";
-import Flippy, { FrontSide, BackSide } from "react-flippy";
+import Cards from "../Cards";
 
 function Prodotti() {
   return (
     <>
       <HalfHeader />
-      <Flippy
-        flipOnHover={false} // default false
-        flipOnClick={true} // default false
-        flipDirection="horizontal" // horizontal or vertical
-        href="https://picsum.photos/200/300" // to use toggle method like this.flippy.toggle()
-        // if you pass isFlipped prop component will be controlled component.
-        // and other props, which will go to div
-        style={{ width: "200px", height: "200px" }} /// these are optional style, it is not necessary
-      >
-        <FrontSide
-          style={{
-            backgroundColor: "#41669d",
-          }}
-        >
-          RICK
-        </FrontSide>
-        <BackSide style={{ backgroundColor: "#175852" }}>ROCKS</BackSide>
-      </Flippy>
+      <div className="container my-5">
+        <div className="row justify-content-around">
+          <Cards />
+          <Cards />
+          <Cards />
+        </div>
+      </div>
     </>
   );
 }

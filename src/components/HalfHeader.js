@@ -1,18 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const [header, setHeader] = useState();
+function HalfHeader() {
+  const [header, setHeader] = useState();
 
-const changeHeader = () => {
-  const url = window.location.href;
+  useEffect(() => {
+    changeHeader();
+  }, []);
 
-  if (url === "http://localhost:3000/Corsi") {
-    setHeader("I Corsi");
-  } else if (url === "http://localhost:3000/Prodotti") {
-    setHeader("I Prodotti");
-  }
-};
-changeHeader();
-const HalfHeader = () => {
+  const changeHeader = () => {
+    const url = window.location.href;
+
+    if (url === "http://localhost:3000/Corsi") {
+      setHeader("I Corsi");
+    } else if (url === "http://localhost:3000/Prodotti") {
+      setHeader("I Prodotti");
+    } else {
+      setHeader("Contattaci");
+    }
+  };
+
   return (
     <section className="p-0 m-0">
       <div className="container-fluid d-flex flex-column justify-content-around half-above">
@@ -30,5 +36,5 @@ const HalfHeader = () => {
       </div>
     </section>
   );
-};
+}
 export default HalfHeader;

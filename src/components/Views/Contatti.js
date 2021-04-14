@@ -1,4 +1,4 @@
-import HalfHeader from "../HalfHeader.js";
+import HalfHeader from "../HalfHeader";
 import { Form } from "react-bootstrap";
 import Iframe from "react-iframe";
 import { Link } from "react-router-dom";
@@ -7,6 +7,7 @@ function Contatti() {
   return (
     <>
       <HalfHeader />
+
       <Iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.450387541737!2d16.853904815417657!3d41.124692979289215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347e88d29e9c9cd%3A0x585d1b70ea5c31ce!2sSpazio%2013!5e0!3m2!1sit!2sit!4v1617447352263!5m2!1sit!2sit"
         width="100%"
@@ -19,17 +20,17 @@ function Contatti() {
         <ul className="list-unstyled d-flex">
           <li>
             <Link to="">
-              <i class="fab fa-facebook-f fa-2x mx-5 text-light"></i>
+              <i className="fab fa-facebook-f fa-2x mx-5 text-light"></i>
             </Link>
           </li>
           <li>
             <Link to="">
-              <i class="fab fa-twitter fa-2x mx-5 text-light"></i>
+              <i className="fab fa-twitter fa-2x mx-5 text-light"></i>
             </Link>
           </li>
           <li>
             <Link to="">
-              <i class="fab fa-instagram fa-2x mx-5 text-light"></i>
+              <i className="fab fa-instagram fa-2x mx-5 text-light"></i>
             </Link>
           </li>
         </ul>

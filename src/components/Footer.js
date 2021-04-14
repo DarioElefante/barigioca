@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="container-fluid bg-dark">
@@ -10,13 +12,23 @@ const Footer = () => {
             <li>email</li>
           </ul>
         </div>
-        <div className="col-12 col-md-6 text-right px-5">
-          <ul className="text-light list-unstyled">
-            <li>link1</li>
-            <li>link2</li>
-            <li>link3</li>
-            <li>link4</li>
-            <li>link5</li>
+        <div className="row justify-content-around p-5">
+          <ul className="list-unstyled d-flex">
+            <li>
+              <Link to="">
+                <i className="fab fa-facebook-f fa-2x mx-5 text-light"></i>
+              </Link>
+            </li>
+            <li>
+              <Link to="">
+                <i className="fab fa-twitter fa-2x mx-5 text-light"></i>
+              </Link>
+            </li>
+            <li>
+              <Link to="">
+                <i className="fab fa-instagram fa-2x mx-5 text-light"></i>
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
