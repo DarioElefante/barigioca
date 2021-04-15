@@ -16,21 +16,21 @@ function Contatti() {
         loading="lazy"
       ></Iframe>
 
-      <div className="row justify-content-around p-5 bg-contact-social">
+      <div className="container-fluid d-flex justify-content-center py-md-5 py-5 bg-contact-social">
         <ul className="list-unstyled d-flex">
           <li>
-            <Link to="">
-              <i className="fab fa-facebook-f fa-2x mx-5 text-light"></i>
+            <Link className="p-0 m-0" to="">
+              <i className="fab fa-facebook-f fa-2x mx-lg-5 mx-3 text-light"></i>
             </Link>
           </li>
           <li>
-            <Link to="">
-              <i className="fab fa-twitter fa-2x mx-5 text-light"></i>
+            <Link className="p-0 m-0" to="">
+              <i className="fab fa-twitter fa-2x mx-lg-5 mx-3 text-light"></i>
             </Link>
           </li>
           <li>
-            <Link to="">
-              <i className="fab fa-instagram fa-2x mx-5 text-light"></i>
+            <Link className="p-0 m-0" to="">
+              <i className="fab fa-instagram fa-2x mx-lg-5 mx-3 text-light"></i>
             </Link>
           </li>
         </ul>

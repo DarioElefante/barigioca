@@ -12,21 +12,21 @@ const Footer = () => {
             <li>email</li>
           </ul>
         </div>
-        <div className="row justify-content-around p-5">
-          <ul className="list-unstyled d-flex">
+        <div className="row justify-content-center justify-content-md-around p-md-5 p-0">
+          <ul className="list-unstyled col-12 col-md-6 d-flex">
             <li>
               <Link to="">
-                <i className="fab fa-facebook-f fa-2x mx-5 text-light"></i>
+                <i className="fab fa-facebook-f fa-2x mx-4 mx-md-5 text-light"></i>
               </Link>
             </li>
             <li>
               <Link to="">
-                <i className="fab fa-twitter fa-2x mx-5 text-light"></i>
+                <i className="fab fa-twitter fa-2x mx-4 mx-md-5 text-light"></i>
               </Link>
             </li>
             <li>
               <Link to="">
-                <i className="fab fa-instagram fa-2x mx-5 text-light"></i>
+                <i className="fab fa-instagram fa-2x mx-4 mx-md-5 text-light"></i>
               </Link>
             </li>
           </ul>

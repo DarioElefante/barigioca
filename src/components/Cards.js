@@ -15,7 +15,7 @@ function Prodotti() {
         style={{
           backgroundColor: "#41669d",
         }}
-        className="p-0 m-0 rounded"
+        className="p-0 mx-0 rounded "
       >
         <div className="container-fluid m-0 p-0">
           <img
@@ -25,7 +25,7 @@ function Prodotti() {
           />
         </div>
       </FrontSide>
-      <BackSide style={{ backgroundColor: "#175852" }} className="rounded">
+      <BackSide style={{ backgroundColor: "#175852" }} className="rounded ">
         {" "}
         <div className="py-3">
           <h4>Product description</h4>

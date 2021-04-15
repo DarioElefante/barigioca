@@ -7,9 +7,15 @@ function Prodotti() {
       <HalfHeader />
       <div className="container my-5">
         <div className="row justify-content-around">
-          <Cards />
-          <Cards />
-          <Cards />
+          <div className="my-5">
+            <Cards />
+          </div>
+          <div className="my-5">
+            <Cards />
+          </div>
+          <div className="my-5">
+            <Cards />
+          </div>
         </div>
       </div>
     </>
