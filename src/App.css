@@ -13,7 +13,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: 1000px;
   background-color: var(--second-color);
   overflow-x: hidden;
 }
