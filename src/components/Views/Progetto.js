@@ -2,7 +2,7 @@ import CarouselContainer from "../CarouselContainer";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
-function Progetto() {
+function Progetto({ corsi, productCatalog }) {
   return (
     <>
       <section className="p-0 m-0">
@@ -34,7 +34,7 @@ function Progetto() {
       </section>
       <div id="toBanners" className="fix-height d-lg-block d-none"></div>
 
-      <CarouselContainer />
+      <CarouselContainer corsi={corsi} />
 
       {/* <section data-aos="fade-up" className="my-5">
         <div className="container-fluid bg-info">

@@ -1,20 +1,7 @@
 import HalfHeader from "../HalfHeader.js";
 import Cards from "../Cards";
 
-function Prodotti() {
-  const productCatalog = [
-    {
-      image: "publicmediaalabarda_spaziale.jpg",
-      name: "Alabarda Spaziale",
-      description: "Alabarda Spaziale",
-    },
-    {
-      image: "publicmediaalabarda_spaziale.jpg",
-      name: "Alabarda Spaziale",
-      description: "Alabarda Spaziale",
-    },
-  ];
-
+function Prodotti({ productCatalog }) {
   return (
     <>
       <HalfHeader />
