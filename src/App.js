@@ -51,11 +51,7 @@ function App() {
   };
 
   useEffect(() => {
-    if (window.innerWidth <= 770) {
-      setNav(true);
-    } else {
-      document.addEventListener("scroll", navbarOnSCroll);
-    }
+    document.addEventListener("scroll", navbarOnSCroll);
   }, []);
 
   const displayMenu = () => {

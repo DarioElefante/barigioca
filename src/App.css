@@ -46,7 +46,7 @@ nav {
     position: absolute;
     opacity: 0;
     right: -100%;
-    top: 110px;
+    top: 50px;
     display: hidden;
   }
 
@@ -58,7 +58,7 @@ nav {
     right: 0%;
     padding-right: 50px;
     padding-top: 20px;
-    top: 100px;
+    top: 50px;
     transition: 0.4s;
     background-color: var(--main-color);
   }

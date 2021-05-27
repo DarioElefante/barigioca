@@ -21,8 +21,8 @@ function Prodotti({ product }) {
         >
           <div className="container-fluid m-0 p-0">
             <img
-              src="public\media\alabarda_spaziale.jpg"
-              className="img-fluid mx-auto"
+              src=".\media\alabarda_spaziale.jpg"
+              className="img-fluid"
               alt=""
             />
           </div>

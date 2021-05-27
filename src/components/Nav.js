@@ -9,8 +9,12 @@ function Nav({ navbar, displayMenu, smartmenu }) {
       }`}
     >
       <div className="p-0 m-0">
-        <img src="" alt="" />
-        <p className="display-4">D</p>
+        <img
+          src=".\media\logo-sito-2.png"
+          alt="logo tou.play"
+          width="100px"
+          className="img-fluid mx-auto d-block py-2"
+        />
       </div>
       <div className="p-0 m-0">
         <i
@@ -18,7 +22,7 @@ function Nav({ navbar, displayMenu, smartmenu }) {
           className="fas fa-bars fa-2x d-block d-md-none"
         ></i>
         <ul
-          className={`navbar-nav list-unstyled list-group-horizontal-md mt-md-3 p-0 ${
+          className={`navbar-nav list-unstyled list-group-horizontal-md ${
             smartmenu ? "smartnav active" : "smartnav"
           }`}
         >

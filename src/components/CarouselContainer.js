@@ -8,7 +8,7 @@ const CarouselContainer = ({ corsi }) => {
         <Carousel.Item>
           <img
             className="d-block w-100 img-fluid carousel"
-            src="media/barigioca_logo.jpg"
+            src="./media/barigioca_logo.jpg"
             alt={corso.position}
           />
           <Carousel.Caption className="text-dark">
