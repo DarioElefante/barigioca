@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 const CarouselContainer = ({ corsi }) => {
   return (
-    <Carousel data-aos="fade-up">
+    <Carousel controls={false} data-aos="fade-up" className="h-75">
       {corsi.map((corso) => (
         <Carousel.Item>
           <img
-            className="d-block w-100 img-fluid carousel"
-            src="./media/barigioca_logo.jpg"
+            className="d-block w-100 carousel"
+            src={corso.image}
             alt={corso.position}
           />
           <Carousel.Caption className="text-dark">

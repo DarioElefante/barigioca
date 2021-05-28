@@ -128,3 +128,7 @@ nav {
   background-color: var(--main-color);
   clip-path: polygon(0 0, 100% 0, 94% 72%, 8% 64%);
 }
+
+.prod::after {
+  width: 0% !important;
+}
